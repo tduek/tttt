@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Demo::Application.config.secret_key_base = 'aca9709588cc2a1a9a6d644da3e2529580078002c128db85d2f67206e3951be0bee169deb34b96fb0be6cadc582a0bc6fdddd264fe4f5c8ecb886c5b5222eb4a'
+Demo::Application.config.secret_key_base = ENV["APP_SECRET_KEY_BASE"]
