@@ -1,3 +1,10 @@
 <h1><%= @user.name %></h1>
 
+
+
+<% if @user.avatar %>
+<img src="<%= @user.avatar.url(:thumb) %>">
+<img src="<%= @user.avatar.url %>">
+<% end %>
+
 <section><strong>Email:</strong> <%= @user.email %></section>
