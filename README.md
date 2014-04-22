@@ -34,9 +34,9 @@
     3. Edit config/application.yml
     4. `rake figaro:heroku` to push up your keys to Heroku.
 
-[paperclip](https://github.com/thoughtbot/paperclip)
-[figaro](https://github.com/laserlemon/figaro)
-[s3](http://aws.amazon.com/s3/)
+[paperclip]: https://github.com/thoughtbot/paperclip
+[figaro]: https://github.com/laserlemon/figaro
+[s3]: http://aws.amazon.com/s3/
 
 
 
