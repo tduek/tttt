@@ -39,5 +39,26 @@
 [figaro]: https://github.com/laserlemon/figaro
 [s3]: http://aws.amazon.com/s3/
 
+### 3. [Omniauth][oauth] & [Oauth-Facebook][oauth-fb] (Wed 4/23)
+  1. Files to look at:
+    * Gemfile
+    * config/initializers/omniauth.rb
+    * app/views/layouts/application.html.erb
+    * config/routes.rb
+    * app/controllers/sessions_controller.rb
+  2. Flow
+    1. User get to your app and hits a link to 'Login w/fb'
+      * Sends them to /auth/facebook, which gets intercepted by omniauth gem.
+    2. This redirects them to facebook, where they authorize your app.
+    3. Facebook redirects to your app (to /auth/facebook/callback)
+    4. You handle the redirect in some controller action.
+      * You'll probably grab a user from the db or create one from the info in `request.env['omniauth.auth']`
+  3. Gotchas
+    * Make sure you create your app on www.developers.facebook.com
+      * Whitelist your redirect URI in Settings > Valid Oauth redirect URIs
+    * Have a route in routes.rb for auth/facebook/callback
+
+[oauth](https://github.com/intridea/omniauth)
+[oauth-fb](https://github.com/mkdynamic/omniauth-facebook)
 
 
