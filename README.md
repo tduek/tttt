@@ -58,7 +58,7 @@
       * Whitelist your redirect URI in Settings > Valid Oauth redirect URIs
     * Have a route in routes.rb for auth/facebook/callback
 
-[oauth](https://github.com/intridea/omniauth)
-[oauth-fb](https://github.com/mkdynamic/omniauth-facebook)
+[oauth]: https://github.com/intridea/omniauth
+[oauth-fb]: https://github.com/mkdynamic/omniauth-facebook
 
 
