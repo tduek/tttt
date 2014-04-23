@@ -9,6 +9,7 @@
     * `git push heroku master`
     * `heroku run bundle exec rake db:migrate` to run your migrations on heroku
 
+
   Gotchas:
   * Make sure you're using Postgres. Heroku doesn't support SQLite3.
   * `config.initialize_on_precompile = false` in config/application.rb

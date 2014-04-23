@@ -8,9 +8,19 @@
 </head>
 <body>
 
+  <% if logged_in? %>
+    Logged in as <%= current_user.email %> |
+    <%= button_to "Log out", session_url, method: :delete %>
+  <% else %>
+    <a href="auth/facebook">LOG IN WITH THE FACEBOOK</a>
+  <% end %>
+
+
   <% flash.each do |type, message| %>
   <span><strong><%= type %>:</strong> <%= message %></span>
   <% end %>
+
+
 
 <%= yield %>
 

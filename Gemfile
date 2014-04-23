@@ -12,6 +12,18 @@ gem 'aws-sdk'
 
 gem 'figaro'
 
+gem 'rest-client'
+
+
+gem 'omniauth-facebook'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
